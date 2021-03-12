@@ -20,16 +20,15 @@
                             <ol>
                                 <li>
                                     <label for="name" style="float: left;">Nom:&nbsp;</label>
-                                    <input type="text" id="name" name="user_name" style="float: left;" /><br><br>
+                                    <input type="text" required="" style="float: left;" /><br><br>
                                 </li>
                                 <li>
                                     <label for="birthday" style="float: left;">Date de naissance:&nbsp;</label>
-                                    <input type="date" style="float: left;" id="birthday" name="birthday" /><br><br>
+                                    <input type="date" required="" style="float: left;" /><br><br>
                                 </li>
                                 <li>
                                     <label for="website" style="float: left;">Site:&nbsp;</label>
-                                    <input type="url" id="website" name="website" pattern="https?://.+"
-                                        title="Include http://" placeholder="http://monsite.com"
+                                    <input type="url" required="" placeholder="http://monsite.com"
                                         style="float: left;" /><br><br>
                                 </li>
                                 <li>
@@ -98,10 +97,10 @@
         <input type="color" id="head" name="head" src="nof.gif" />
         </br>
         <label>Sur une échelle de 1 a 10 quelle est votre degré d'enthousiame pour HTML5? </label>
-        <input type="range" min="0" max="10" value="5" id="myRange"
+        <input type="range" min="1" max="10" value="5" id="myRange"
             oninput="this.nextElementSibling.value = this.value" />
         <output>5</output>
-        <p><button style="width: 100px">Envoyer</button></p>
+        <p><button type="submit" style="width: 100px">Envoyer</button></p>
     </div>
 </body>
 </html>
